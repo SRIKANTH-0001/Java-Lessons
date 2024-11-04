@@ -24,8 +24,9 @@ public class Frame extends JFrame implements ActionListener {
 
 	JButton button;
 	JLabel label;
+	//Creating Constructer
 	Frame(){
-	
+	//To access the Image file in your Internal Storage
 	ImageIcon image =new ImageIcon("walpaper.jfif");
 		
 	label=new JLabel();
@@ -50,14 +51,14 @@ public class Frame extends JFrame implements ActionListener {
 	frame.add(button);
 	frame.add(label);
 	
-}
+	}
+	//Use Method Override Concept to ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==button) {
 			System.out.println("You are Clicked");
 			label.setVisible(true);
 		}
-		
 	}
 
 }
